@@ -14,7 +14,7 @@ using namespace std;
 int main(){
     char x='a';
     int y=x;
-    cout<<Y<<endl;
+    cout<<y<<endl;
     return 0;
 }
 //value of x is stored in y. so the output is 97.

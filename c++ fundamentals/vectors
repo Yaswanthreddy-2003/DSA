@@ -1,0 +1,19 @@
+//to initialise an empty vector
+//vector<int>a or vector<int>a{} or vector<int>a(0);
+
+//2d empty vector
+//vector<vector<int>>a or vector<vector<int>>a{} or vector<vector<int>>a(0,vector<int>(0));
+
+//capacity of vector
+//what is the capacity of vector?
+//capacity of vector is the number of elements that can be stored in the vector without reallocation.
+//what is reallocation?
+//reallocation is the process of allocating new memory for the vector and copying the elements from the old memory to the new memory.
+//when we add elements or push_back elements to the vector, if the capacity of the vector is not enough to store the new elements, 
+//then the vector will reallocate the memory and copy the elements from the old memory to the new memory.
+
+//the capacity of the vector is always greater than or equal to the size of the vector.
+//the capacity of the vector is always a power of 2.
+
+
+
