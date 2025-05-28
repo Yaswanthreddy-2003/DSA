@@ -3,6 +3,7 @@
         "vector": "cpp",
         "queue": "cpp",
         "stack": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "iterator": "cpp"
     }
 }
