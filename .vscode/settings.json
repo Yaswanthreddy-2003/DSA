@@ -4,6 +4,8 @@
         "queue": "cpp",
         "stack": "cpp",
         "xutility": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "iostream": "cpp",
+        "number_of_occurences_of_substring_in_a_stringcpp": "cpp"
     }
 }

@@ -41,11 +41,16 @@ bool helper(int index,int sum,int k,vector<int>&nums){
             return false;
         }
     }
-    bool pick=helper(index+1,sum+nums[index],k,nums);
-    if(pick==true)return true;
+    // bool pick=helper(index+1,sum+nums[index],k,nums);
+    // if(pick==true)return true;
 
-    bool notpick=helper(index+1,sum,k,nums);
-    if(notpick==true)return true;
+    // bool notpick=helper(index+1,sum,k,nums);
+    // if(notpick==true)return true;
+
+    if(helper(index+1,sum+nums[index],k,nums)==true)return true;
+    if(helper(index+1,sum,k,nums)==true)return true;
+    //if we reach here, it means no subsequence with sum k is found
+
 
     return false;
 }

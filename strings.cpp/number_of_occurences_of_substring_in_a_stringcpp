@@ -1,0 +1,38 @@
+//number of occurences of substring in a string
+#include <iostream>
+#include <string>   
+using namespace std;
+int main(){
+    string str = "learn learning learnings learning learnt Learn Learnt learn";
+    string sub = "ear";
+    int count = 0;
+    for(int i=0;i<str.length()-sub.length()+1;i++){
+        if(str.substr(i,sub.length())==sub){
+            count++;
+        }
+    }
+    cout<<count<<endl;
+    return 0;
+}
+//tc: O(n*m) where n is the length of the string and m is the length of the substring
+//sc: O(1) as we are not using any extra space except for the input
+
+//using nested loops
+{
+    int count=0;
+    for(int i=0;i<str.length();i++){
+        for(int j=0;j<sub.length();j++){
+            if(str[i+j]!=sub[j])break;
+            if(j==sub.length()-1)count++;
+        }
+        
+    }
+    cout<<count<<endl;
+    return 0;
+}
+//tc: O(n*m) where n is the length of the string and m is the length of the substring
+//sc: O(1) as we are not using any extra space except for the input
+
+//optimised solution using KMP algorithm
+//tc : O(n+m) where n is the length of the string and m is the length of the substring
+//sc: O(m) for the lps array

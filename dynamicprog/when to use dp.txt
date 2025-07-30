@@ -1,0 +1,62 @@
+🔁 When to Consider DP
+1. Recursion + Overlapping Subproblems
+If you're writing recursion and same inputs are getting recomputed, that’s a DP candidate.
+
+E.g., f(n) = f(n-1) + f(n-2) → classic Fibonacci
+
+📊 Problem Types That Usually Require DP
+✅ Count the number of ways
+Example: Climbing stairs, coin change (total ways), maze paths
+
+Hint: Use DP[i] = total ways to reach i
+
+✅ Find the min/max value
+Example: Frog jump with min energy, max sum subarray, knapsack
+
+Hint: Think of DP[i] = best value for i
+
+✅ Subset/Partition problems
+Example: Subset sum, equal partition, target sum
+
+If a subset is involved, DP is your friend.
+
+✅ String problems
+Example: LCS, Edit distance, Palindrome partition
+
+90% of string comparison/modification problems use 2D DP.
+
+✅ Games / Turn based
+Example: Nim game, stone game
+
+Use DP with memoization to store winning/losing states.
+
+✅ DP on Trees / Graphs
+When tree-based recursion is repeated, DP on trees works.
+
+E.g., Diameter of tree, Tree DP (max sum from subtree)
+
+🚩 Red Flags That Hint DP
+"Find the total number of ___"
+
+"Maximize/Minimize ___"
+
+"Return true/false if ___ is possible"
+
+Recursion with repeated calls on same inputs
+
+Input size is too big for brute force, like 10⁵ elements with exponential choices
+
+🧠 Shortcut Thinking
+If problem says...	Think...
+“Min/Max of...”	DP with value updates
+“Total number of ways...”	DP with counting
+“Can you reach/achieve something?”	DP with boolean values
+“Choose or not choose items”	0/1 Knapsack-style DP
+“Break string into parts”	DP with partitioning
+“Compare two sequences”	2D DP
+“Recursive tree with repeated calls”	Tree DP
+
+main steps to convert the problem.
+1.convert the problem into indexing
+2.do all stuffs on that index.
+3.take the min (all stuffs).
